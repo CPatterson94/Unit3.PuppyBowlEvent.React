@@ -2,7 +2,7 @@
 import React from "react";
 
 // Import the generated hook from our RTK Query API slice
-import { useFetchPlayersQuery } from "../../api/puppyBowlApi";
+import { useFetchPlayersQuery } from "../../api/index";
 
 // Import the CSS styles for this component
 import "../../index.css";

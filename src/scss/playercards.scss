@@ -1,22 +1,3 @@
-/* Apply a background image to the entire body of the document. */
-body {
-  background-image: url("./assests/concrete.jpg"); /* The image used as a background. */
-  background-repeat: no-repeat; /* The background image will not repeat. */
-  background-attachment: fixed; /* The background image will not scroll with the page. */
-  background-size: cover; /* The background image will cover the entire area of the element. */
-}
-
-/* Styling for the introduction text of the application. */
-.intro {
-  text-align: center; /* The text is centered. */
-  color: #610564; /* The color of the text. */
-  font-size: 24px; /* The size of the text. */
-  padding: 24px; /* The padding around the text. */
-  margin-left: 21px; /* The margin to the left of the text. */
-  padding-right: 100px; /* The padding to the right of the text. */
-  padding-left: 100px; /* The padding to the left of the text. */
-}
-
 /* Styling for the container that holds the player cards. */
 .players {
   display: flex; /* The player cards are displayed using flexbox. */
@@ -40,7 +21,9 @@ body {
 
 /* Styling for when a user hovers over a player card. */
 .player-card:hover {
-  transform: translateY(-5px); /* The card moves up 5 pixels when hovered over. */
+  transform: translateY(
+    -5px
+  ); /* The card moves up 5 pixels when hovered over. */
 }
 
 /* Styling for the container that holds the player's image. */
@@ -72,5 +55,3 @@ body {
   font-size: 16px; /* The size of the details text. */
   text-align: center; /* The details text is centered. */
 }
-
-/*# sourceMappingURL=index.css.map */
