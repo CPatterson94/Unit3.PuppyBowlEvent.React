@@ -1,18 +1,8 @@
-/* Apply a background image to the entire body of the document. */
-body {
-  background-image: url("./assests/concrete.jpg"); /* The image used as a background. */
-  background-repeat: no-repeat; /* The background image will not repeat. */
-  background-attachment: fixed; /* The background image will not scroll with the page. */
-  background-size: cover; /* The background image will cover the entire area of the element. */
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
-/* Styling for the introduction text of the application. */
-.intro {
-  text-align: center; /* The text is centered. */
-  color: #610564; /* The color of the text. */
-  font-size: 24px; /* The size of the text. */
-  padding: 24px; /* The padding around the text. */
-  margin-left: 21px; /* The margin to the left of the text. */
-  padding-right: 100px; /* The padding to the right of the text. */
-  padding-left: 100px; /* The padding to the left of the text. */
+#root {
+  padding-top: 60px;
 }
