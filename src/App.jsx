@@ -8,8 +8,7 @@ import SPlayerPage from "./components/players/SPlayerPage";
 import AddPlayer from "./components/players/AddPlayer";
 
 function App() {
-  const { isLoading, data } = useGetPlayersQuery();
-  console.log(data);
+  const { isLoading } = useGetPlayersQuery();
   return (
     <>
       <Nav />

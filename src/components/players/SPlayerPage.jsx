@@ -22,12 +22,12 @@ function SPlayerPage() {
         </h1>
       )}
       <FontAwesomeIcon
-        style={{ color: "gray", fontSize: "60px" }}
+        style={{ color: "gray", fontSize: "50px" }}
         onClick={() => deletePlayer(id)}
         icon={faTrash}
       />
       <Link to={"/"}>
-        <button>Return to Players</button>
+        <button className="returnButt">Return to Players</button>
       </Link>
     </div>
   );

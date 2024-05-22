@@ -13,9 +13,10 @@
   justify-content: space-around;
   align-items: center;
   padding: 8px;
+  color: black;
 
   img {
-    height: 100px;
+    height: 200px;
   }
   @media screen and (min-width: 600px) {
     width: 240px;

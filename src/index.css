@@ -34,9 +34,10 @@ nav {
   justify-content: space-around;
   align-items: center;
   padding: 8px;
+  color: black;
 }
 .character img {
-  height: 100px;
+  height: 200px;
 }
 @media screen and (min-width: 600px) {
   .character {
