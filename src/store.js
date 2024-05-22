@@ -5,7 +5,7 @@ import playerSlice from "./slices/playerSlice";
 const store = configureStore({
   reducer: {
     [api.reducerPath]: api.reducer,
-    puppies: playerSlice,
+    puppy: playerSlice,
   },
 
   middleware: (getDefaultMiddleware) =>

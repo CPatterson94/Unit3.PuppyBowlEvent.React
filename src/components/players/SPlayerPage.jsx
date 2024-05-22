@@ -1,7 +1,7 @@
-import { useGetPlayerQuery } from "../redux/api/api.js";
+import { useGetPlayerQuery } from "../../api/index.js";
 import { useParams, Link } from "react-router-dom";
 import SinglePlayer from "./SinglePlayer.jsx";
-import { useDeletePlayerMutation } from "../redux/api/api.js";
+import { useDeletePlayerMutation } from "../../api/index.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons/faTrash";
 
@@ -22,10 +22,9 @@ function SPlayerPage() {
         </h1>
       )}
       <FontAwesomeIcon
-        style={{ color: "gray", fontSize: "50px" }}
+        style={{ color: "gray", fontSize: "60px" }}
         onClick={() => deletePlayer(id)}
         icon={faTrash}
-        spin
       />
       <Link to={"/"}>
         <button>Return to Players</button>

@@ -1,15 +1,15 @@
-import React from "react";
+// import React from "react";
 import { useGetPlayersQuery } from "./api/index";
 import { Route, Routes } from "react-router-dom";
 
 import Nav from "./components/nav";
 import AllPlayers from "./components/players/AllPlayers";
-import SinglePlayer from "./components/players/SinglePlayer";
+import SPlayerPage from "./components/players/SPlayerPage";
 import AddPlayer from "./components/players/AddPlayer";
 
 function App() {
-  const { isLoading } = useGetPlayersQuery;
-
+  const { isLoading, data } = useGetPlayersQuery();
+  console.log(data);
   return (
     <>
       <Nav />
@@ -18,7 +18,7 @@ function App() {
       ) : (
         <Routes>
           <Route index element={<AllPlayers />} />
-          <Route path={"/players/:id"} element={<SinglePlayer />} />
+          <Route path={"/players/:id"} element={<SPlayerPage />} />
           <Route path={"addPlayer"} element={<AddPlayer />} />
         </Routes>
       )}
