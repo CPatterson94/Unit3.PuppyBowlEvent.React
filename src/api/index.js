@@ -3,7 +3,7 @@ import { fetchBaseQuery } from "@reduxjs/toolkit/query";
 export const api = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://fsa-puppy-bowl.herokuapp.com/api/2109-UNF-HY-WEB-PT/",
+    baseUrl: "https://fsa-puppy-bowl.herokuapp.com/api/2404-ftb-et-web-ft/",
   }),
   endpoints: (builder) => ({
     getPlayers: builder.query({
